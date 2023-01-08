@@ -23,6 +23,8 @@ public class Locators2 {
 		    driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
 			driver.findElement(By.xpath("//button[contains(@class,'signInBtn')]")).click();
 			Thread.sleep(2000);
+			System.out.println("Git Commit");
+
 			System.out.println(driver.findElement(By.tagName("p")).getText());
 			//assert.assertEquals(successfulMsg, "You are successfully logged in.");
 			Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
